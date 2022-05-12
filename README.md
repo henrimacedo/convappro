@@ -1,7 +1,7 @@
 # Bienvenue sur le guide de convappro! (sujet 31)
 Convappro a pour objectif de donner avec la plus grande précision la valeur approximative du sinus de tout nombre réel (angle en radians modulo 2pi).
 
-Cette précision théorique est de l'ordre de 10<sup>-100<sup> et utilise les formules de Taylor-Lagrange pour les développements limités et les suites de Cauchy pour en certifier la convergence (la stabilité et la précision).
+Cette précision théorique est de l'ordre de 10<sup>-100</sup> et utilise les formules de Taylor-Lagrange pour les développements limités et les suites de Cauchy pour en certifier la convergence (la stabilité et la précision).
 
 Comme but scolaire, ce module a été réalisé par Henri MACEDO GONÇALVES, Alexandre RAMDOO, NOVERRAZ Marion et HAGHVIRDILOO Mostafa.
 
@@ -53,7 +53,7 @@ Preuve de Cauchy:
   preuveCauchy(x)
 ```
 
-Tronque x à 10<sup>-p<sup> près
+Tronque x à 10<sup>-p</sup> près
 ```
   tronque(x,p)
 ```
