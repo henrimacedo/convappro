@@ -53,7 +53,7 @@ Preuve de Cauchy:
   preuveCauchy(x)
 ```
 
-Tronque x à 10<sup>-p</sup> près
+Tronque x à 10<sup>-p</sup> près:
 ```
   tronque(x,p)
 ```
