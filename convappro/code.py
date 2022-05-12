@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Projet d'analyse: Sujet 31
 Le projet: Il nous est demandé d'approcher la valeur de sin(8/5) tout en certifiant nos résultats.
@@ -11,6 +13,9 @@ dans la classe calculs, on définit toutes les fonctions nécessaires et demand�
 """
 
 class calculs:
+    
+    "Test"
+    
     def __init__(self, valeur):
         """
         Initialisation de la fonction calculs pour les problèmes ménant à sin(:param valeur)
@@ -60,7 +65,7 @@ class calculs:
 
     def suiteR(self, n):
         """
-        Suite (r(n)_n
+        Suite (r(n)_n)
         :param n: entier naturel, l'indice n de la suite
         :return: r(:param n)
         """
@@ -94,6 +99,7 @@ class calculs:
             if (self.valeurAbsolue(difference) < epsilon):
                 break
         return n - 1
+    
 """
 Ensuite, on a un main pour executer les fonctions et pour présenter les résultats.
 """
