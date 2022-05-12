@@ -19,8 +19,9 @@ python3 -m pip install appromath
 ### 2. Utilisation
 Soit vous utilisez le main à disposition:
 
-Dans le terminal, allez sur le répertoire de convappro et tapez:
-```./convappro/code.py
+- Dans le terminal, allez sur le répertoire de convappro et tapez:
+```
+  ./convappro/code.py
 ```
 
 Soit vous utilisez manuellement:
@@ -33,23 +34,28 @@ from code import calculs
 Vous avez à votre disposition les fonctions suivantes:
 
 Initialisation:
-```calculs(x)
+```
+  calculs(x)
 ```
 
 Certificat de convergence d'une suite (r(n))_n de l'ordre x:
-```conv(x)
+```
+  conv(x)
 ```
 
 Suite (r(n)_n):
-```suiteR(x)
+```
+  suiteR(x)
 ```
 
 Preuve de Cauchy:
-```preuveCauchy(x)
+```
+  preuveCauchy(x)
 ```
 
 Tronque x à 10<sup>-p<sup> près
-```tronque(x,p)
+```
+  tronque(x,p)
 ```
 
 ## DISCLAIMER
