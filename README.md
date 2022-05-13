@@ -36,7 +36,7 @@ La variable x est la valeur que vous souhaitez calculer.
 
 Vous avez à votre disposition les fonctions suivantes:
 
-Certificat de convergence d'une suite (r(n)_n) de l'ordre k du calcul conv(k):
+Certificat de convergence d'une suite (r(n)<inf>n</inf>) de l'ordre k du calcul conv(k):
 ```
   resultat = valeur.conv(k)
 ```
