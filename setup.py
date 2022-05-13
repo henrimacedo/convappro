@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="convappro",
-    version="0.0.1",
+    version="0.0.2",
     author="Marion NOVERRAZ, Mostafa HAGHVIRDILOO, Alexandre RAMDOO, Henri MACEDO GONCALVES",
     author_email="henri.macedo-goncalves@etu.unistra.fr",
     description="Projet d'analyse: Sujet 31",
