@@ -3,9 +3,9 @@ Convappro a pour objectif de donner avec la plus grande précision la valeur app
 
 Cette précision théorique est de l'ordre de 10<sup>-100</sup> et utilise les formules de Taylor-Lagrange pour les développements limités et les suites de Cauchy pour en certifier la convergence (la stabilité et la précision).
 
-Comme but scolaire, ce module a été réalisé par Henri MACEDO GONÇALVES, Alexandre RAMDOO, NOVERRAZ Marion et HAGHVIRDILOO Mostafa.
+Ce module a été réalisé par Henri MACEDO GONÇALVES, Alexandre RAMDOO, NOVERRAZ Marion et HAGHVIRDILOO Mostafa comme but scolaire.
 
-##Consignes d'utilisation
+## Consignes d'utilisation
 
 ### 1. Installation
 ```shell script
@@ -24,46 +24,47 @@ Soit vous utilisez le main à disposition:
   ./code.py
 ```
 
-Soit vous utilisez manuellement:
-```python3
+Soit en l'utilisant manuellement:
+```
+python3
 from code import *
 valeur = calculs(x)
 ```
 
-La variable x est la valeur que vous souhaitez calculer.
+- La variable x est la valeur que vous souhaitez calculer.
 
 ### 3. Les fonctions
 
 Vous avez à votre disposition les fonctions suivantes:
 
-Certificat de convergence d'une suite (r(n))_n de l'ordre k du calcul conv(k):
+Certificat de convergence d'une suite (r(n)<sub>n</sub>) de l'ordre k du calcul conv(k):
 ```
-  resultat = valeur.conv(k)
+resultat = valeur.conv(k)
 ```
 
 r(n) calcule n-ième élément:
 ```
-  valeur.r(n)
+valeur.r(n)
 ```
 
-Affiche les n premiers éléments de la suite
+Affiche les n premiers éléments de la suite:
 ```
-  valeur.suiteR(n)
+valeur.suiteR(n)
 ```
 
 Preuve de Cauchy:
 ```
-  valeur.preuveCauchy(epsilon)
+valeur.preuveCauchy(epsilon)
 ```
 
 Affiche à partir de quel r(n) l'ordre est atteinte:
 ```
-  valeur.ordreAtteinte(epsilon)
+valeur.ordreAtteinte(epsilon)
 ```
 
-Tronque x (ex: valeur.r(valeur.preuveCauchy(epsilon))) à 10<sup>-p</sup> près:
+Tronque x ( ex: valeur.r(valeur.preuveCauchy(epsilon)) ) à 10<sup>-p</sup> près:
 ```
-  a = valeur.tronque(x,p)
+a = valeur.tronque(x,p)
 ```
 
 ## DISCLAIMER
