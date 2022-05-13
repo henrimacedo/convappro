@@ -2,23 +2,21 @@
 
 """
 Projet d'analyse: Sujet 31
-Le projet: Il nous est demandé d'approcher la valeur de sin(8/5) tout en certifiant nos résultats.
-            Grace à la formule de Taylor sur R appliquée à la preuve de Cauchy et à l'établissement du certificat de
+Le projet: Il nous est demandé d'approcher de la valeur de sin(8/5) tout en certifiant nos résultats.
+            Gràce à la formule de Taylor appliquée sur R à la preuve de Cauchy et à l'établissement du certificat de
             convergence, on a constaté que l'on peut etendre cette définition sur R et ainsi pouvoir de cette manière
             moduler à un ordre k les N premières décimales du sin de tout réel
             Voici le programme qui traduit les résultats de nos analyses.
 """
 """
-dans la classe calculs, on définit toutes les fonctions nécessaires et demandées dans l'énnoncé
+Dans la classe calculs, on définit toutes les fonctions nécessaires et demandées dans l'énoncé
 """
 
 class calculs:
     
-    "Test"
-    
     def __init__(self, valeur):
         """
-        Initialisation de la fonction calculs pour les problèmes ménant à sin(:param valeur)
+        Initialisation de la fonction calculs pour les problèmes menant à sin(:param valeur)
         :param valeur: valeur de type float
         """
         self.valeur = valeur
@@ -115,16 +113,16 @@ class calculs:
                 break
         return n - 1
     
-    def ordreAtteinte(self, epsilon):
+    def ordreAtteint(self, epsilon):
         """
-        Fonction pour le main qui affiche à partir de quelle suite R, l'ordre epsilon est atteinte
+        Fonction pour le main qui affiche à partir de quel rang de la suite R, l'ordre epsilon est atteint
         :param epsilon: Ordre de precision souhaité
         """
         print(f"Certificat d'ordre {epsilon} atteinte à partir de r({self.preuveCauchy(epsilon)})")
         
     
 """
-Ensuite, on a un main pour executer les fonctions et pour présenter les résultats.
+Ensuite, le main execute les fonctions et présente les résultats.
 """
 
 valeur = calculs(8/5)
@@ -137,7 +135,7 @@ if __name__ == '__main__':
     valeur.suiteR(resultat)
     
     epsilon = 10 ** -6
-    valeur.ordreAtteinte(epsilon)
+    valeur.ordreAtteint(epsilon)
     
     a = valeur.tronque(valeur.r(valeur.preuveCauchy(epsilon)), 6)
     
