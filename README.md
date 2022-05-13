@@ -19,43 +19,51 @@ python3 -m pip install convappro
 ### 2. Utilisation
 Soit vous utilisez le main à disposition:
 
-- Dans le terminal, allez sur le répertoire de convappro et tapez:
+- Dans le terminal, allez sur le répertoire qui contient code.py et tapez:
 ```
-  ./convappro/code.py
+  ./code.py
 ```
 
 Soit vous utilisez manuellement:
 ```python3
-from code import calculs
+from code import *
+valeur = calculs(x)
 ```
+
+La variable x est la valeur que vous souhaitez calculer.
 
 ### 3. Les fonctions
 
 Vous avez à votre disposition les fonctions suivantes:
 
-Initialisation:
+Certificat de convergence d'une suite (r(n))_n de l'ordre k du calcul conv(k):
 ```
-  calculs(x)
-```
-
-Certificat de convergence d'une suite (r(n))_n de l'ordre x:
-```
-  conv(x)
+  resultat = valeur.conv(k)
 ```
 
-Suite (r(n)_n):
+r(n) calcule n-ième élément:
 ```
-  suiteR(x)
+  valeur.r(n)
+```
+
+Affiche les n premiers éléments de la suite
+```
+  valeur.suiteR(n)
 ```
 
 Preuve de Cauchy:
 ```
-  preuveCauchy(x)
+  valeur.preuveCauchy(epsilon)
 ```
 
-Tronque x à 10<sup>-p</sup> près:
+Affiche à partir de quel r(n) l'ordre est atteinte:
 ```
-  tronque(x,p)
+  valeur.ordreAtteinte(epsilon)
+```
+
+Tronque x (ex: valeur.r(valeur.preuveCauchy(epsilon))) à 10<sup>-p</sup> près:
+```
+  a = valeur.tronque(x,p)
 ```
 
 ## DISCLAIMER

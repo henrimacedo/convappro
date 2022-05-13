@@ -48,6 +48,7 @@ class calculs:
         :return: :param x à 10**-:param p près
         """
         p = 10 ** p
+        print('a = ', (int(x * p))/p)
         return (int(x * p))/p
 
     def sinusTaylor(self,angle,p):
@@ -63,13 +64,25 @@ class calculs:
             valeur += (((-1) ** n ) * ((angle ** ((2*n) + 1)) / self.factoriel((2*n) + 1 )))
         return valeur
 
-    def suiteR(self, n):
+    def r(self, n):
         """
-        Suite (r(n)_n)
+        r(n)
         :param n: entier naturel, l'indice n de la suite
         :return: r(:param n)
         """
+        print(f"r({n}) = {self.sinusTaylor(self.valeur, n)}")
         return self.sinusTaylor(self.valeur, n)
+    
+    def suiteR(self, n):
+        """
+        Suite (r(n)_n)
+        Fonction pour le main qui affiche chaque valeur de r(n)
+        """
+        print("\n")
+        for i in range(0, n+1):
+            self.r(i)
+        print("\n")
+        
 
     def conv(self, k):
         """
@@ -84,6 +97,8 @@ class calculs:
             approche = (2 ** (n + 1)) / self.factoriel(n + 1)
             if (approche <= ordre):
                 break
+        
+        print(f"resultat = {n}")
         return n
 
     def preuveCauchy(self, epsilon):
@@ -100,6 +115,14 @@ class calculs:
                 break
         return n - 1
     
+    def ordreAtteinte(self, epsilon):
+        """
+        Fonction pour le main qui affiche à partir de quelle suite R, l'ordre epsilon est atteinte
+        :param epsilon: Ordre de precision souhaité
+        """
+        print(f"Certificat d'ordre {epsilon} atteinte à partir de r({self.preuveCauchy(epsilon)})")
+        
+    
 """
 Ensuite, on a un main pour executer les fonctions et pour présenter les résultats.
 """
@@ -107,18 +130,15 @@ Ensuite, on a un main pour executer les fonctions et pour présenter les résult
 valeur = calculs(8/5)
 
 if __name__ == '__main__':
-    print('\tDebut du programme\n\n')
+    print('\n\tDebut du programme\n\n')
 
-    resultat = valeur.conv(8)
-    print(f"resultat = {resultat}")
+    resultat = valeur.conv(7)
     
-    for i in range(0, resultat+1):
-        print(f"r({i}) = {valeur.suiteR(i)}")
+    valeur.suiteR(resultat)
     
     epsilon = 10 ** -6
-    print(f"Certificat d'ordre {epsilon} atteinte à partir de r({valeur.preuveCauchy(epsilon)})")
+    valeur.ordreAtteinte(epsilon)
     
-    a = valeur.tronque(valeur.suiteR(valeur.preuveCauchy(epsilon)), 6)
-    print('a = ', a)
+    a = valeur.tronque(valeur.r(valeur.preuveCauchy(epsilon)), 6)
     
     print('\n\n\tFin du programme')
