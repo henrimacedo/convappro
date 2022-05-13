@@ -31,7 +31,7 @@ from code import *
 valeur = calculs(x)
 ```
 
-La variable x est la valeur que vous souhaitez calculer.
+- La variable x est la valeur que vous souhaitez calculer.
 
 ### 3. Les fonctions
 
