@@ -9,11 +9,11 @@ Comme but scolaire, ce module a été réalisé par Henri MACEDO GONÇALVES, Ale
 
 ### 1. Installation
 ```shell script
-pip install appromath
+pip install convappro
 ``` 
 ou encore
 ```shell script
-python3 -m pip install appromath
+python3 -m pip install convappro
 ```
 
 ### 2. Utilisation
