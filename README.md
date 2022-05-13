@@ -24,8 +24,9 @@ Soit vous utilisez le main à disposition:
   ./code.py
 ```
 
-Soit vous utilisez manuellement:
-```python3
+Soit en l'utilisant manuellement:
+```
+python3
 from code import *
 valeur = calculs(x)
 ```
@@ -38,32 +39,32 @@ Vous avez à votre disposition les fonctions suivantes:
 
 Certificat de convergence d'une suite (r(n)<sub>n</sub>) de l'ordre k du calcul conv(k):
 ```
-  resultat = valeur.conv(k)
+resultat = valeur.conv(k)
 ```
 
 r(n) calcule n-ième élément:
 ```
-  valeur.r(n)
+valeur.r(n)
 ```
 
 Affiche les n premiers éléments de la suite:
 ```
-  valeur.suiteR(n)
+valeur.suiteR(n)
 ```
 
 Preuve de Cauchy:
 ```
-  valeur.preuveCauchy(epsilon)
+valeur.preuveCauchy(epsilon)
 ```
 
 Affiche à partir de quel r(n) l'ordre est atteinte:
 ```
-  valeur.ordreAtteinte(epsilon)
+valeur.ordreAtteinte(epsilon)
 ```
 
 Tronque x ( ex: valeur.r(valeur.preuveCauchy(epsilon)) ) à 10<sup>-p</sup> près:
 ```
-  a = valeur.tronque(x,p)
+a = valeur.tronque(x,p)
 ```
 
 ## DISCLAIMER
