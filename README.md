@@ -36,7 +36,7 @@ La variable x est la valeur que vous souhaitez calculer.
 
 Vous avez à votre disposition les fonctions suivantes:
 
-Certificat de convergence d'une suite (r(n))_n de l'ordre k du calcul conv(k):
+Certificat de convergence d'une suite (r(n)_n) de l'ordre k du calcul conv(k):
 ```
   resultat = valeur.conv(k)
 ```
@@ -46,7 +46,7 @@ r(n) calcule n-ième élément:
   valeur.r(n)
 ```
 
-Affiche les n premiers éléments de la suite
+Affiche les n premiers éléments de la suite:
 ```
   valeur.suiteR(n)
 ```
@@ -61,7 +61,7 @@ Affiche à partir de quel r(n) l'ordre est atteinte:
   valeur.ordreAtteinte(epsilon)
 ```
 
-Tronque x (ex: valeur.r(valeur.preuveCauchy(epsilon))) à 10<sup>-p</sup> près:
+Tronque x ( ex: valeur.r(valeur.preuveCauchy(epsilon)) ) à 10<sup>-p</sup> près:
 ```
   a = valeur.tronque(x,p)
 ```
