@@ -3,7 +3,7 @@ Convappro a pour objectif de donner avec la plus grande précision la valeur app
 
 Cette précision théorique est de l'ordre de 10<sup>-100</sup> et utilise les formules de Taylor-Lagrange pour les développements limités et les suites de Cauchy pour en certifier la convergence (la stabilité et la précision).
 
-Comme but scolaire, ce module a été réalisé par Henri MACEDO GONÇALVES, Alexandre RAMDOO, NOVERRAZ Marion et HAGHVIRDILOO Mostafa.
+Ce module a été réalisé par Henri MACEDO GONÇALVES, Alexandre RAMDOO, NOVERRAZ Marion et HAGHVIRDILOO Mostafa comme but scolaire.
 
 ## Consignes d'utilisation
 
